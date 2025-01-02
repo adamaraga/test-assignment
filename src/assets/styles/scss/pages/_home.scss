@@ -1,0 +1,35 @@
+.home {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  &__main {
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 8px 15px 0px #1414141f, 0px 0px 4px 0px #1414141a;
+    border-radius: 6px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 370px;
+    max-height: 326px;
+
+    &__pages {
+      border-bottom: 0.7px solid #cdcdcd;
+      border-top: 0.7px solid #cdcdcd;
+      padding: 10px 0 10px 0;
+      margin: 10px 0 10px 0;
+      max-height: 175px;
+      overflow-y: auto;
+
+      scrollbar-width: none; /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Edge */
+      }
+    }
+
+    &__btn {
+      padding: 10px 0 10px 0;
+    }
+  }
+}

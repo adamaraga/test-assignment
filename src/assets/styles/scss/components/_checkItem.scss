@@ -1,0 +1,76 @@
+.checkItem {
+  padding: 8px 7px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    cursor: pointer;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    & span {
+      height: 23px;
+      width: 23px;
+      border: 1px solid #e1e1e1;
+      position: relative;
+      border-radius: 6px;
+      color: #e3e3e3;
+      //   transition: 0.3s;
+
+      & svg {
+        display: none;
+        width: 15.64px;
+      }
+    }
+
+    &:hover input ~ span {
+      border: 1px solid #bdbdbd;
+
+      & svg {
+        display: block;
+      }
+    }
+
+    & input:active ~ span {
+      outline: 5px solid #e9f0fe;
+      color: #878787;
+    }
+    & input:checked:active ~ span {
+      outline: 5px solid #e9f0fe;
+      color: #fff;
+      background-color: #2469f6 !important;
+    }
+
+    & input:checked ~ span {
+      background-color: #2469f6;
+    }
+    &:hover input:checked ~ span {
+      background-color: #5087f8;
+    }
+
+    & input:checked ~ span {
+      border-color: transparent;
+      & svg {
+        display: block;
+        color: #fff;
+      }
+    }
+
+    & span {
+      & svg {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 3px;
+      }
+    }
+  }
+}
