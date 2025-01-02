@@ -1,0 +1,19 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px var(--body-padding);
+  min-height: 100vh;
+
+  & button {
+    width: 250px;
+    height: 50px;
+    background-color: $primary-color;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

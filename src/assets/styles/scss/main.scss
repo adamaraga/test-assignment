@@ -1,0 +1,55 @@
+:root {
+  font-size: 62.5%;
+}
+
+@import "abstracts/variable";
+
+// @import "components/topbar";
+
+@import "pages/notFound";
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Montserrat", serif;
+  color: $text-color;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
